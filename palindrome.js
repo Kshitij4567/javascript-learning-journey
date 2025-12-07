@@ -1,9 +1,12 @@
 let word = prompt("please enter any word you want to check");
-let reversed = word.split("").reverse().join("");
+let reversed= "";
+for(i = word.length-1; i>=0; i--){
+    reversed = reversed + word[i];
+}
 console.log(reversed);
 if(word===reversed){
-    console.log("yes the number is palindrome " +word);
+    console.log("yes, the word is palindrome")
 }
 else{
- console.log("no, the number is not palindrome " +word)
+    console.log("no the word is not palindrome")
 }
