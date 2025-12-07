@@ -1,7 +1,13 @@
-let num = Number(prompt("please enter the number"));
-if(num%2===0){
-    console.log("the number you have entered is even")
+let num =[];
+for(i=0;i<5;i++){
+    num.push(Number(prompt(" Enter number" + (i+1))));
+}
+for(i=0; i< num.length; i++){
+if(num[i]%2===0){
+console.log(num[i] + " is Even");
 }
 else{
-    console.log("the number you have entered is odd");
+console.log(num[i] + " is odd");
+    
+}
 }
