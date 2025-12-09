@@ -8,5 +8,3 @@ function factorial(n) {
         }
         return result;
 }
-let num = prompt("enter the factorial you want");
-console.log(factorial(num))
