@@ -1,14 +1,15 @@
-let num = Number(prompt("please enter the number"));
-let isprime = true;
-for (let i = 2; i < num ; i++) {
-    if(num%i===0){
-        isprime = false;
-        break;
-    }  
+function isPrime(n) {
+    if (n <= 1) return false;
+    for (let i = 2; i < n; i++) {
+        if (n % i === 0) return false;
+    }
+    return true;
 }
-if(isprime && num>1){
-    console.log("The number you entered is prime")
+
+let num = Number(prompt("Enter a number:"));
+if (isPrime(num)) {
+    console.log(num + " is Prime ✅");
+} else {
+    console.log(num + " is Not Prime ❌");
 }
-else{
-    console.log("the number you have entered is not prime")
-}
+
